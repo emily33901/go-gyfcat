@@ -12629,3 +12629,12 @@ func GetUrl() string {
 
 	return adj1 + adj2 + animal
 }
+
+func GetKebabUrl() string {
+	adj1 := strings.ToLower(GetAdjective())
+	adj2 := strings.ToLower(GetAdjective())
+
+	animal := strings.ToLower(GetAnimal())
+
+	return adj1 + "-" + adj2 + "-" + animal
+}
